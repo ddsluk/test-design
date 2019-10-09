@@ -1,0 +1,13 @@
+local Fib = {}
+
+--[[
+    Simple Fibonacci function
+    @param n - The fibonacci sequece position to search.
+    @return - Fib(n) value.
+--]]
+function Fib.get(n)
+    if n < 2 then return 1 end
+    return fib(n - 2) + fib(n - 1)
+end
+
+return Fib
